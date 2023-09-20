@@ -21,8 +21,8 @@ def main():
         fields = ['name', 'age', 'job']
         writer = csv.DictWriter(file, fields, delimiter=';')
         writer.writeheader()
-        for name in my_dict:
-            writer.writerow(name)
+        for row in my_dict:
+            writer.writerow(row)
 
 
 my_dict = [{'name': 'Tom', 'age':'23', 'job': 'doctor'},
